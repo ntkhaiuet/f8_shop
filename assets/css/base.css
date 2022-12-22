@@ -114,7 +114,7 @@ html {
   cursor: pointer;
   color: var(--text-color);
   background-color: #fff;
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
 }
