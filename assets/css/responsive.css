@@ -33,6 +33,12 @@
   .app__container {
     margin-top: calc(var(--header-height) + var(--header-sort-bar-height));
   }
+  .app__content {
+    padding-top: 10px;
+  }
+  .mobile-category {
+    display: block;
+  }
 }
 
 /* Tablet */
@@ -73,6 +79,16 @@
     animation: mobileSearchSideIn linear 0.3s;
     display: none;
   }
+  @keyframes mobileSearchSideIn {
+    from {
+      top: calc(var(--header-height) / 2);
+      opacity: 0;
+    }
+    to {
+      top: var(--header-height);
+      opacity: 1;
+    }
+  }
   .header__search-history {
     position: fixed;
     top: calc(var(--header-height) + var(--header-sort-bar-height) + 1px);
@@ -94,15 +110,7 @@
   .app__content {
     margin: 0 4px;
   }
-
-  @keyframes mobileSearchSideIn {
-    from {
-      top: calc(var(--header-height) / 2);
-      opacity: 0;
-    }
-    to {
-      top: var(--header-height);
-      opacity: 1;
-    }
+  .header__logo-img {
+    width: 110px;
   }
 }
