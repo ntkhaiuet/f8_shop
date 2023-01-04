@@ -1,9 +1,5 @@
 /* Mobile and Tablet */
 @media (max-width: 1023px) {
-  :root {
-    --header-height: 68px;
-    --navbar-height: 0px;
-  }
   .hide-on-mobile-tablet {
     display: none;
   }
@@ -39,10 +35,29 @@
   .mobile-category {
     display: block;
   }
+  .footer__heading {
+    text-align: center;
+  }
+  .footer-item__link,
+  .footer__download {
+    justify-content: center;
+  }
+  .footer__download-app-link {
+    display: block;
+    padding: 6px 8px;
+  }
+  .header__cart-item-remove {
+    user-select: none;
+    -webkit-user-select: none;
+  }
 }
 
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
+  :root {
+    --header-height: 68px;
+    --navbar-height: 0px;
+  }
   .hide-on-tablet {
     display: none;
   }
@@ -54,6 +69,10 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+  :root {
+    --header-height: 54px;
+    --navbar-height: 0px;
+  }
   .hide-on-mobile {
     display: none;
   }
